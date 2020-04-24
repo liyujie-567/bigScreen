@@ -1,0 +1,231 @@
+@spacing: 20px;
+@fill: 100%;
+.regionSize (@regionW: 100%, @regionH: 100%) {
+  width: @regionW;
+  height: @regionH;
+}
+.login {
+  .regionSize();
+  background-size: @fill @fill;
+}
+
+//pad
+@media screen and (max-width:962px){
+  .login-content {
+    width: @fill;
+    height: calc(@fill - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    .login-info {
+      width: 36%;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .login-from {
+      width: @fill;
+      .login-title {
+        font-size: 30px;
+        font-weight: 600;
+        color: #222;
+        margin: 30px 0 10px 60px;
+      }
+      .login-from-div {
+        width: 80%;
+        margin: 0 auto;
+        padding: @spacing 0;
+        .login-from-div-li {
+          display: flex;
+          border-radius: 40px;
+          margin-top: @spacing * 2;
+          overflow: hidden;
+          border: 1px solid #f1f1f1;
+          &>img {
+            height: 25px;
+            width: 25px;
+            margin: 10px;
+          }
+        }
+        .login-focus {
+          border: 1px solid #1e8dfc !important;
+        }
+      }
+    }
+  }
+  .login-footer {
+    width: @fill;
+    height: 30px;
+    line-height:30px;
+    font-size:18px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 4px;
+  }
+  .login-margin {
+    margin-top: @spacing * 2.5;
+    cursor: pointer;
+  }
+  .login-left {
+    flex: 1;
+    height: 596px;
+  }
+}
+
+// 55寸
+@media screen and (width:960px){
+  .login-content {
+    width: @fill;
+    height: calc(@fill - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    .login-info {
+      width: 50%;
+      height: 50%;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .login-from {
+      width: @fill;
+      .login-title {
+        font-size: 66px;
+        font-weight: 600;
+        color: #222;
+        margin: 40px 0 0 100px;
+      }
+      .login-from-div {
+        width: 80%;
+        margin: 0 auto;
+        padding: @spacing 0;
+        .login-from-div-li {
+          display: flex;
+          border-radius: 40px;
+          margin-top: @spacing * 2.3;
+          overflow: hidden;
+          border: 1px solid #f1f1f1;
+          &>img {
+            height: 25px;
+            width: 25px;
+            margin: 10px;
+          }
+        }
+        .login-focus {
+          border: 1px solid #1e8dfc !important;
+        }
+      }
+    }
+  }
+  .big-screen-input {
+    height: @spacing * 4.4;
+    line-height: @spacing * 3;
+    font-size: @spacing * 1.5;
+  }
+  .login-footer {
+    width: @fill;
+    height: 30px;
+    line-height:30px;
+    font-size:18px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 4px;
+  }
+  .login-margin {
+    margin-top: @spacing * 2.5;
+    height: @spacing * 4;
+    line-height: @spacing * 4;
+    font-size: @spacing * 1.8;
+    cursor: pointer;
+  }
+  .login-left {
+    flex: 1;
+  }
+  .login-right {
+    width: 600px;
+    height: 780px;
+    background-size: @fill @fill;
+  }
+}
+
+// 75寸
+@media screen and (min-width:1280px) and (max-width: 3000px) {
+  .login-content {
+    width: @fill;
+    height: calc(@fill - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    .login-info {
+      //width: 36%;
+      width: 50%;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .login-from {
+      width: @fill;
+      .login-title {
+        font-size: 50px;
+        font-weight: 600;
+        color: #222;
+        margin: 30px 0 10px 80px;
+      }
+      .login-from-div {
+        width: 80%;
+        margin: 0 auto;
+        padding: @spacing 0;
+        .login-from-div-li {
+          display: flex;
+          border-radius: 40px;
+          margin-top: @spacing * 2;
+          overflow: hidden;
+          border: 1px solid #f1f1f1;
+          &>img {
+            height: 25px;
+            width: 25px;
+            margin: 10px;
+          }
+        }
+        .login-focus {
+          border: 1px solid #1e8dfc !important;
+        }
+      }
+    }
+  }
+  .big-screen-input {
+    height: @spacing * 4;
+    line-height: @spacing * 2.6;
+    font-size: @spacing * 1.5;
+  }
+  .login-footer {
+    width: @fill;
+    height: 30px;
+    line-height:30px;
+    font-size:18px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 4px;
+  }
+  .login-margin {
+    margin-top: @spacing * 2.5;
+    height: @spacing * 4;
+    line-height: @spacing * 2.6;
+    font-size: @spacing * 1.5;
+    cursor: pointer;
+  }
+  .login-left {
+    flex: 1;
+  }
+  .login-right {
+    width: 50%;
+    height: 800px;
+    background-size: @fill @fill;
+  }
+}

@@ -1,0 +1,54 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  ::-webkit-scrollbar-track-piece {
+    background-color: #f8f8f8;
+  }
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #bbc3d2;
+    background-clip: padding-box;
+    min-height: 28px;
+    -webkit-border-radius: 3em;
+    -moz-border-radius: 3em;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #bbb;
+  }
+}
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100%;
+}
+.el-dialog__wrapper {
+  overflow: hidden !important;
+}
+
+.beyond-one{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.beyond-two{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2;
+}
+.el-message {
+  font-size: 24px;
+  padding: 20px 40px;
+}
+.el-message__content {
+  font-size: 24px;
+}
